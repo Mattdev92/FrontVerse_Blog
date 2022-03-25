@@ -12,6 +12,7 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
+        <h1>My FronteVerse Blog...</h1>
         <Seo title="All posts" />
         <Bio />
         <p>
