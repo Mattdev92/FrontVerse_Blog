@@ -5,7 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
+const FAQ = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
@@ -59,11 +59,12 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
+      <Link to="/FAQ">FAQ</Link>
     </Layout>
   )
 }
 
-export default BlogIndex
+export default FAQ
 
 export const pageQuery = graphql`
   query {
